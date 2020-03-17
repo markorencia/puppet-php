@@ -1,0 +1,12 @@
+---
+php::install_ensure: 'installed'
+#php::install_epel: 'epel'
+php::remi73_ensure: 'file'
+php::remi73_path: '/etc/yum.repos.d/remi-php73.repo'
+php::www_ensure: 'file'
+php::www_path: '/etc/php-fpm.d/www.conf'
+php::info_ensure: 'file'
+php::info_path: '/usr/share/nginx/html/info.php'
+php::service_name: 'php-fpm'
+php::service_ensure: 'running'
+php::service_enable: true
